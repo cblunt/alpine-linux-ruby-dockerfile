@@ -18,7 +18,7 @@ RUN apk add --update linux-headers build-base openssl-dev libc-dev \
     make uninstall && \
     cd / && rm -rf ruby-install-0.6.0 && \
 
-    apk del git bash wget linux-headers build-base openssl-dev libc-dev \
+    apk del bash wget linux-headers build-base openssl-dev libc-dev \
         libxml2-dev libxslt-dev libffi-dev readline-dev \
         jemalloc-dev bash wget
 
