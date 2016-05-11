@@ -22,6 +22,8 @@ RUN apk add --update linux-headers build-base openssl-dev libc-dev \
         libxml2-dev libxslt-dev libffi-dev readline-dev \
         jemalloc-dev bash wget
 
+RUN apk add readline
+
 RUN echo "gem: --no-document" > ~/.gemrc
 
 RUN gem install bundler
