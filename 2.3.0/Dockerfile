@@ -19,10 +19,8 @@ RUN apk add --update linux-headers build-base openssl-dev libc-dev \
     cd / && rm -rf ruby-install-0.6.0 && \
 
     apk del bash wget linux-headers build-base openssl-dev libc-dev \
-        libxml2-dev libxslt-dev libffi-dev readline-dev \
+        libxml2-dev libxslt-dev libffi-dev \
         jemalloc-dev bash wget
-
-RUN apk install readline
 
 RUN echo "gem: --no-document" > ~/.gemrc
 
